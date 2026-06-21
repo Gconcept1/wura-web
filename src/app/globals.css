@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* WURA brand tokens — ported from site/css/wura.css */
+:root {
+  --obsidian: #14110f;
+  --ivory: #f7f3ec;
+  --oxblood: #5c1a22;
+  --gold: #b98b2e;
+  --gold-deep: #8a641c;
+  --verdigris: #1f4d3f;
+  --smoke: #5b544c;
+  --stone: #a89f92;
+  --linen: #ede6da;
+  --success: #2e7d5b;
+  --warning: #b5791a;
+  --error: #a23b2e;
+
+  --background: var(--ivory);
+  --foreground: var(--obsidian);
+  --muted: var(--smoke);
+}
+
+@theme inline {
+  --color-obsidian: var(--obsidian);
+  --color-ivory: var(--ivory);
+  --color-oxblood: var(--oxblood);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-verdigris: var(--verdigris);
+  --color-smoke: var(--smoke);
+  --color-stone: var(--stone);
+  --color-linen: var(--linen);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+
+  --font-serif: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
